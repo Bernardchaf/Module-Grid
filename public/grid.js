@@ -11,7 +11,8 @@ var defaultOrderedList = [
   'ascent',
   'calories',
   'distance',
-  'duration'
+  'duration',
+    'speed_gps'
 ];
 
 var defaultZoomIndex = 3;
@@ -131,9 +132,17 @@ function restoreGrid() {
 function subscribeGridItemWith(definition) {
   var formatter = definition.formatter;
   definition.unsubscribe();
-  definition.subscribe(function(value) {
-    updateGridItemWith(definition, formatter(value));
-  });
+  if (definition.id == 'speed_gps') {
+      definition.subscribe(function(location) {
+          updateGridItemWith(definition, formatter(location.speed));
+      });
+    
+  } else {
+      definition.subscribe(function(value) {
+          updateGridItemWith(definition, formatter(value));
+      });
+    
+  }
 }
 
 // Update dom element with values for item

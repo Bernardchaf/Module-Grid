@@ -15,7 +15,8 @@ i18next.init(
                     'calories': 'Calories',
                     'ascent': 'Ascent',
                     'heart_rate': 'Heart Rate',
-                    'duration': 'Duration'
+                    'duration': 'Duration',
+                    'speed_gps': 'Speed by GPS'
                 }
             },
             de: {
@@ -28,7 +29,8 @@ i18next.init(
                     'calories': 'Kalorien',
                     'ascent': 'Aufstieg',
                     'heart_rate': 'Puls',
-                    'duration': 'Dauer'
+                    'duration': 'Duration',
+                    'speed_gps': 'Geschwindigkeit per GPS'
                 }
             },
             fr: {
@@ -41,7 +43,8 @@ i18next.init(
                     'calories': 'Calories',
                     'ascent': 'Dénilevé',
                     'heart_rate': 'Rythme cardiaque',
-                    'duration': 'Durée de la session'
+                    'duration': 'Duration',
+                    'speed_gps': 'Vitesse avec le GPS'
                     
                 }
             }

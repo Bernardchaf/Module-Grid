@@ -106,5 +106,14 @@ var definitions = [
         formatter: formatMins,
         unit: 'min',
         defaultValue: '-'
+    },
+    {
+        id: 'speed_gps',
+        name: i18next.t('speed_gps'),
+        subscribe: COBI.mobile.location.subscribe,
+        unsubscribe: COBI.mobile.location.unsubscribe,
+        formatter: formatSpeedDot1,
+        unit: 'km/h',
+        defaultValue: '-'
     }
 ];
