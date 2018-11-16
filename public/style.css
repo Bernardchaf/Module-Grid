@@ -16,7 +16,7 @@ ul {
 .uk-card-default {
     background: #2d2d37;
     color: #FFF;
-    box-shadow: 0;
+    box-shadow: none;
     padding: .7rem .5rem;
 }
 
@@ -31,6 +31,7 @@ ul {
   letter-spacing: .05rem;
   text-transform: uppercase;
   margin-bottom: 1.2rem;
+  max-height: 15px;
 }
 
 .value {
